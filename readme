@@ -1,0 +1,17 @@
+一、md5校验
+md5sum -c 0056_R_mp3_K6706U2BL_kernel_20220729.md5
+
+root@prize:~# md5sum -c 0056_R_mp3_K6706U2BL_kernel_20220729.md5
+0056_R_mp3_K6706U2BL_kernel_20220729.tar.gz: OK
+
+二、代码解压
+tar -zxvf 0056_R_mp3_K6706U2BL_kernel_20220729.tar.gz
+
+三、拷贝make_kernel_R.sh 到0056_R_mp3_K6706U2BL_kernel_20220729
+
+root@prize:~/0056_R_mp3_K6706U2BL_kernel_20220729# cp ~/make_kernel_R.sh  .
+
+四、kernel 编译
+./make_kernel_R.sh
+
+root@prize:~/0056_R_mp3_K6706U2BL_kernel_20220729# ./make_kernel_R.sh

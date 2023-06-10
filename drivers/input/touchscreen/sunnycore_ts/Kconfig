@@ -1,0 +1,17 @@
+#
+# SunnyCore Touchscreen driver configuration
+#
+
+config TOUCHSCREEN_SC
+        bool "SunnyCore Touchscreen"
+		depends on I2C
+		default n
+		help
+		  Say Y here if you have Focaltech touch panel.
+		  If unsure, say N.
+
+config TOUCHSCREEN_SC_DIRECTORY
+    string "SunnyCore ts directory name"
+    default "SunnyCore"
+    depends on TOUCHSCREEN_SC
+    
